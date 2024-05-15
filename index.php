@@ -16,7 +16,7 @@ class Movie{
     }
 
     public function getMovie(){
-        return $this->title . ' - Directed by: ' . $this->direction . ' - Duration: ' . $this->duration . ' - Genre: ' . $this->genre;
+        return $this->title . '<br/>' . ' - Directed by: ' . $this->direction . ' - Duration: ' . $this->duration . ' - Genre: ' . $this->genre;
     }
 }
 
@@ -36,6 +36,8 @@ var_dump($scarface) ;
     <title>Document</title>
 </head>
 <body>
+    <div> <?php echo $blow->getMovie(); ?></div>
+    <div> <?php echo $scarface->getMovie(); ?></div>
     
 </body>
 </html>
